@@ -65,8 +65,15 @@ body h1 {
   font-weight: 400;
   margin-bottom: 40px;
 }
-body header {
+body header #top-header {
   background-color: #087d36;
+}
+body header #top-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 body header div,
 body header a {

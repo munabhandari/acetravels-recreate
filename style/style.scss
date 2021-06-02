@@ -20,7 +20,18 @@ body {
     }
 
     header {
-        background-color: $green-dark;
+        #top-header {
+            background-color: $green-dark;
+
+            &.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+
 
         div,
         a {
@@ -223,8 +234,9 @@ body {
             .container {
                 .col {
                     color: $grey-dark;
-                    a{
-                    color: cadetblue;
+
+                    a {
+                        color: cadetblue;
                     }
                 }
             }
