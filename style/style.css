@@ -1,4 +1,204 @@
+@import url("../font/flaticon.css");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,600;0,900;1,700&display=swap");
+.d-grid {
+  display: grid;
+}
+.d-grid.col-3 {
+  grid-template-columns: auto auto auto;
+}
+.d-grid.col-4 {
+  grid-template-columns: auto auto auto auto;
+}
+.d-grid.ai-center {
+  align-items: center;
+}
+.d-grid.col-gap-30 {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.d-grid.row-gap-30 {
+  row-gap: 30px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
 body h1 {
-  color: red;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+body header {
+  background-color: #087d36;
+}
+body header div,
+body header a {
+  font-size: 24px;
+  color: white;
+}
+body header .logo {
+  width: 265px;
+}
+body header i {
+  vertical-align: sub;
+}
+body header nav {
+  background-color: #006d26;
+}
+body header nav ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+body header nav ul li a {
+  text-transform: uppercase;
+  font-size: 15px;
+  display: inline-block;
+  padding: 15px 20px;
+}
+body header nav ul li a:hover {
+  background-color: #006222;
+}
+body header nav ul li:hover .submenu {
+  display: block;
+}
+body header nav ul li .submenu {
+  display: none;
+  width: 130%;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 0 4px #aaa6a6;
+}
+body header nav ul li .submenu li {
+  display: block;
+}
+body header nav ul li .submenu li a {
+  color: #087d36;
+}
+body header nav ul li .submenu li:hover, body header nav ul li .submenu li:hover a {
+  background-color: #f1f1f1;
+}
+body main .card {
+  box-shadow: 0 0 4px #aaa6a6;
+}
+body main .card .img-container {
+  position: relative;
+}
+body main .card .img-container img {
   width: 100%;
+  display: block;
+}
+body main .card .img-container .duration {
+  position: absolute;
+  background-color: #fb8c00;
+  padding: 20px;
+  color: white;
+  top: 20px;
+  left: 0;
+}
+body main .card .img-container .desc {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 40px 24px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+body main .card .img-container .plus {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  background-color: #fb8c00;
+  color: white;
+  border-radius: 100%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  box-shadow: 0 0 4px #aaa6a6;
+  line-height: 35px;
+}
+body main .card .card-footer {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+body main .card .common-padding, body main .card .amount, body main .card .currency {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+body main .card .currency {
+  color: #087d36;
+}
+body main .card .amount {
+  color: #fb8c00;
+}
+body footer {
+  background-color: #087d36;
+}
+body footer .container .col:first-child {
+  color: #feeb1b;
+}
+body footer .container .col:first-child a {
+  color: #feeb1b;
+}
+body footer .container .icons i {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #1c8b3c;
+  cursor: pointer;
+  color: white;
+}
+body footer .container .icons .flaticon-facebook:hover {
+  background-color: #344D82;
+  border-color: #344D82;
+}
+body footer .container .icons .flaticon-twitter:hover {
+  border-color: #2AA9E0;
+  background-color: #2AA9E0;
+}
+body footer .container .icons .flaticon-youtube:hover {
+  border-color: #EB2429;
+  background-color: #EB2429;
 }/*# sourceMappingURL=style.css.map */

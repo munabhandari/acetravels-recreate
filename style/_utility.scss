@@ -1,0 +1,52 @@
+.d-grid {
+    display: grid;
+
+    &.col-3 {
+        grid-template-columns: auto auto auto;
+    }
+
+    &.col-4 {
+        grid-template-columns: auto auto auto auto;
+    }
+    &.ai-center {
+        align-items: center;
+    }
+    &.col-gap-30{
+        column-gap: 30px;
+    }
+    &.row-gap-30{
+        row-gap: 30px;
+    }
+}   
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// PADDING CLASSES
+
+@mixin py($val) {
+    padding-top: $val;
+    padding-bottom: $val;
+}
+
+.py-40 {
+    @include py(40px);
+}
+
+.py-10 {
+    @include py(10px);
+}
+
+.pt-30{
+    padding-top: 30px;
+}

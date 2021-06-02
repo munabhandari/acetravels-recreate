@@ -1,6 +1,203 @@
-body{
-    h1{
-        color: red;
-        width: 100%;
+@import 'utility';
+@import 'vars';
+@import url('../font/flaticon.css');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,600;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+
+    h1 {
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    header {
+        background-color: $green-dark;
+
+        div,
+        a {
+            font-size: 24px;
+            color: $white;
+        }
+
+        .logo {
+            width: 265px;
+        }
+
+        i {
+            vertical-align: sub;
+        }
+
+
+
+        nav {
+            background-color: $green-darker;
+
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    position: relative;
+
+                    a {
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        display: inline-block;
+                        padding: 15px 20px;
+
+                        &:hover {
+                            background-color: $green-darkest;
+                        }
+                    }
+
+                    &:hover .submenu {
+                        display: block;
+                    }
+
+                    .submenu {
+                        display: none;
+                        width: 130%;
+                        background-color: $white;
+                        position: absolute;
+                        box-shadow: $box-shadow;
+
+                        li {
+                            display: block;
+
+                            a {
+                                color: $green-dark;
+                            }
+
+                            &:hover,
+                            &:hover a {
+                                background-color: $grey;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    main {
+        .card {
+            box-shadow: $box-shadow;
+
+            .img-container {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                .duration {
+                    position: absolute;
+                    background-color: $orange;
+                    padding: 20px;
+                    color: $white;
+                    top: 20px;
+                    left: 0;
+                }
+
+                .desc {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    height: 120px;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    color: $white;
+                    padding: 40px 24px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+
+                .plus {
+                    font-size: 1.6rem;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 40px;
+                    background-color: $orange;
+                    color: $white;
+                    border-radius: 100%;
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    box-shadow: $box-shadow;
+                    line-height: 35px;
+                }
+            }
+
+            .card-footer {
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+
+            .common-padding {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .currency {
+                color: $green-dark;
+                @extend .common-padding;
+            }
+
+            .amount {
+                color: $orange;
+                @extend .common-padding;
+            }
+        }
+    }
+
+    footer {
+        background-color: $green-dark;
+
+        .container {
+            .col:first-child {
+                color: $yellow;
+
+                a {
+                    color: $yellow;
+                }
+            }
+
+            .icons{
+                i{
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 30px;
+                    border: 1px solid $green-light;
+                    cursor: pointer;
+                    color: $white;
+                }
+                .flaticon-facebook:hover{
+                        background-color: $fb-color;
+                        border-color: $fb-color;
+
+                }
+                .flaticon-twitter:hover{
+                        border-color: $twitter-color;
+                        background-color: $twitter-color;
+                }
+                .flaticon-youtube:hover{
+                        border-color: $yt-color;
+                        background-color: $yt-color;
+                }
+            }
+        }
     }
 }

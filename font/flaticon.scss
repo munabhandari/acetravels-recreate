@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f490cb7b52598046395a47e3ac1da78d") format("truetype"),
+url("./flaticon.woff?f490cb7b52598046395a47e3ac1da78d") format("woff"),
+url("./flaticon.woff2?f490cb7b52598046395a47e3ac1da78d") format("woff2"),
+url("./flaticon.eot?f490cb7b52598046395a47e3ac1da78d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f490cb7b52598046395a47e3ac1da78d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "youtube": "\f101",
+    "facebook": "\f102",
+    "conversation": "\f103",
+    "envelope": "\f104",
+    "24-hours-phone-service": "\f105",
+    "wall-clock": "\f106",
+    "star": "\f107",
+    "star-1": "\f108",
+    "twitter": "\f109",
+    "search": "\f10a",
+);
+
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-conversation:before {
+    content: map-get($flaticon-map, "conversation");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-24-hours-phone-service:before {
+    content: map-get($flaticon-map, "24-hours-phone-service");
+}
+.flaticon-wall-clock:before {
+    content: map-get($flaticon-map, "wall-clock");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon-map, "star-1");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
