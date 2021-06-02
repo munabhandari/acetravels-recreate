@@ -53,3 +53,19 @@
 .pt-30{
     padding-top: 30px;
 }
+
+.button-round{
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+    background-color: $orange;
+    color: $white;
+    border-radius: 100%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    box-shadow: $box-shadow;
+    line-height: 35px;
+}

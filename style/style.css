@@ -50,6 +50,22 @@
   padding-top: 30px;
 }
 
+.button-round, html #goto-top-icon, body main .card .img-container .plus {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  background-color: #fb8c00;
+  color: white;
+  border-radius: 100%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  box-shadow: 0 0 4px #aaa6a6;
+  line-height: 35px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +74,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Mulish", sans-serif;
 }
 body h1 {
@@ -151,21 +168,6 @@ body main .card .img-container .desc {
   font-size: 18px;
   text-transform: uppercase;
 }
-body main .card .img-container .plus {
-  font-size: 1.6rem;
-  position: absolute;
-  bottom: -20px;
-  right: 40px;
-  background-color: #fb8c00;
-  color: white;
-  border-radius: 100%;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  box-shadow: 0 0 4px #aaa6a6;
-  line-height: 35px;
-}
 body main .card .card-footer {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -230,4 +232,14 @@ body footer .footer-bottom .container .col {
 }
 body footer .footer-bottom .container .col a {
   color: cadetblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html #goto-top-icon {
+  font-size: 14px;
+  bottom: 20px;
+  right: 25px;
+  position: fixed;
 }/*# sourceMappingURL=style.css.map */

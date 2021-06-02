@@ -256,6 +256,10 @@
             </div>
         </div>
     </footer>
+
+    <span id="goto-top-icon">^</span>
+
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script>
         // When the user scrolls the page, execute myFunction
@@ -263,9 +267,6 @@
 
         // Get the navbar
         var navbar = document.getElementById("top-header");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
 
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
@@ -275,6 +276,13 @@
                 navbar.classList.remove("sticky");
             }
         }
+
+        // Scroll top function with smooth transition
+        var gotoTopIcon = document.querySelector('#goto-top-icon');
+        gotoTopIcon.addEventListener('click', function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0;
+        });
     </script>
 </body>
 

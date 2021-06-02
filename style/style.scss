@@ -1,5 +1,5 @@
-@import 'utility';
 @import 'vars';
+@import 'utility';
 @import url('../font/flaticon.css');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,600;0,900;1,700&display=swap');
 
@@ -11,6 +11,7 @@
 }
 
 body {
+    position: relative;
     font-family: 'Mulish', sans-serif;
 
     h1 {
@@ -133,19 +134,7 @@ body {
                 }
 
                 .plus {
-                    font-size: 1.6rem;
-                    position: absolute;
-                    bottom: -20px;
-                    right: 40px;
-                    background-color: $orange;
-                    color: $white;
-                    border-radius: 100%;
-                    display: inline-block;
-                    width: 35px;
-                    height: 35px;
-                    text-align: center;
-                    box-shadow: $box-shadow;
-                    line-height: 35px;
+                    @extend .button-round;
                 }
             }
 
@@ -241,5 +230,18 @@ body {
                 }
             }
         }
+    }
+}
+
+// Scroll top function with smooth transition
+html {
+    scroll-behavior: smooth;
+
+    #goto-top-icon {
+        @extend .button-round;
+        font-size: 14px;
+        bottom: 20px;
+        right: 25px;
+        position: fixed;
     }
 }
