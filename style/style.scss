@@ -170,32 +170,62 @@ body {
                 a {
                     color: $yellow;
                 }
-            }
 
-            .icons{
-                i{
-                    display: inline-block;
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 100%;
-                    text-align: center;
-                    line-height: 30px;
-                    border: 1px solid $green-light;
-                    cursor: pointer;
-                    color: $white;
-                }
-                .flaticon-facebook:hover{
+                .icons {
+                    i {
+                        display: inline-block;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 100%;
+                        text-align: center;
+                        line-height: 30px;
+                        border: 1px solid $green-light;
+                        cursor: pointer;
+                        color: $white;
+                    }
+
+                    .flaticon-facebook:hover {
                         background-color: $fb-color;
                         border-color: $fb-color;
 
-                }
-                .flaticon-twitter:hover{
+                    }
+
+                    .flaticon-twitter:hover {
                         border-color: $twitter-color;
                         background-color: $twitter-color;
-                }
-                .flaticon-youtube:hover{
+                    }
+
+                    .flaticon-youtube:hover {
                         border-color: $yt-color;
                         background-color: $yt-color;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    border-bottom: 1px solid $green-darker;
+                    padding: 5px 0;
+
+                    &,
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            background-color: $green-darkest;
+            padding: 20px 0;
+
+            .container {
+                .col {
+                    color: $grey-dark;
+                    a{
+                    color: cadetblue;
+                    }
                 }
             }
         }

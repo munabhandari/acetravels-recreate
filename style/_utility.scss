@@ -1,6 +1,9 @@
 .d-grid {
     display: grid;
 
+    &.col-2 {
+        grid-template-columns: auto auto;
+    }
     &.col-3 {
         grid-template-columns: auto auto auto;
     }

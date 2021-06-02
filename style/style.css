@@ -3,6 +3,9 @@
 .d-grid {
   display: grid;
 }
+.d-grid.col-2 {
+  grid-template-columns: auto auto;
+}
 .d-grid.col-3 {
   grid-template-columns: auto auto auto;
 }
@@ -179,7 +182,7 @@ body footer .container .col:first-child {
 body footer .container .col:first-child a {
   color: #feeb1b;
 }
-body footer .container .icons i {
+body footer .container .col:first-child .icons i {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -190,15 +193,34 @@ body footer .container .icons i {
   cursor: pointer;
   color: white;
 }
-body footer .container .icons .flaticon-facebook:hover {
+body footer .container .col:first-child .icons .flaticon-facebook:hover {
   background-color: #344D82;
   border-color: #344D82;
 }
-body footer .container .icons .flaticon-twitter:hover {
+body footer .container .col:first-child .icons .flaticon-twitter:hover {
   border-color: #2AA9E0;
   background-color: #2AA9E0;
 }
-body footer .container .icons .flaticon-youtube:hover {
+body footer .container .col:first-child .icons .flaticon-youtube:hover {
   border-color: #EB2429;
   background-color: #EB2429;
+}
+body footer .container ul li {
+  list-style: none;
+  border-bottom: 1px solid #006d26;
+  padding: 5px 0;
+}
+body footer .container ul li,
+body footer .container ul li a {
+  color: white;
+}
+body footer .footer-bottom {
+  background-color: #006222;
+  padding: 20px 0;
+}
+body footer .footer-bottom .container .col {
+  color: #c9c9c9;
+}
+body footer .footer-bottom .container .col a {
+  color: cadetblue;
 }/*# sourceMappingURL=style.css.map */
