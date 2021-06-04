@@ -35,6 +35,9 @@
     text-align: center;
 }
 
+.text-white{
+    color: $white;
+}
 // PADDING CLASSES
 
 @mixin py($val) {
@@ -52,6 +55,10 @@
 
 .pt-30{
     padding-top: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
 }
 
 .button-round{
