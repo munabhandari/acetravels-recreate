@@ -1,0 +1,58 @@
+
+.common-card {
+    box-shadow: $box-shadow;
+
+    .img-container {
+        position: relative;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .duration {
+            position: absolute;
+            background-color: $orange;
+            padding: 20px;
+            color: $white;
+            top: 20px;
+            left: 0;
+        }
+
+        .desc {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 120px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: $white;
+            padding: 40px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .plus {
+            @extend .button-round;
+        }
+    }
+
+    .card-footer {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .common-padding {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .currency {
+        color: $green-dark;
+        @extend .common-padding;
+    }
+
+    .amount {
+        color: $orange;
+        @extend .common-padding;
+    }
+}

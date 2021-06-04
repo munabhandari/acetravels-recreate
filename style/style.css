@@ -58,7 +58,7 @@
   margin-bottom: 40px;
 }
 
-.button-round, html #goto-top-icon, body main .card .img-container .plus {
+.button-round, html #goto-top-icon, .common-card .img-container .plus, body .image-slider .card .img-container .plus, body main .card .img-container .plus {
   font-size: 1.6rem;
   position: absolute;
   bottom: -20px;
@@ -72,6 +72,50 @@
   text-align: center;
   box-shadow: 0 0 4px #aaa6a6;
   line-height: 35px;
+}
+
+.common-card, body .image-slider .card, body main .card {
+  box-shadow: 0 0 4px #aaa6a6;
+}
+.common-card .img-container, body .image-slider .card .img-container, body main .card .img-container {
+  position: relative;
+}
+.common-card .img-container img, body .image-slider .card .img-container img, body main .card .img-container img {
+  width: 100%;
+  display: block;
+}
+.common-card .img-container .duration, body .image-slider .card .img-container .duration, body main .card .img-container .duration {
+  position: absolute;
+  background-color: #fb8c00;
+  padding: 20px;
+  color: white;
+  top: 20px;
+  left: 0;
+}
+.common-card .img-container .desc, body .image-slider .card .img-container .desc, body main .card .img-container .desc {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 40px 24px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.common-card .card-footer, body .image-slider .card .card-footer, body main .card .card-footer {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.common-card .common-padding, body .image-slider .card .common-padding, body main .card .common-padding, .common-card .amount, body .image-slider .card .amount, body main .card .amount, .common-card .currency, body .image-slider .card .currency, body main .card .currency {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.common-card .currency, body .image-slider .card .currency, body main .card .currency {
+  color: #087d36;
+}
+.common-card .amount, body .image-slider .card .amount, body main .card .amount {
+  color: #fb8c00;
 }
 
 * {
@@ -179,49 +223,6 @@ body main h1 {
   text-transform: uppercase;
   font-size: 30px;
 }
-body main .card {
-  box-shadow: 0 0 4px #aaa6a6;
-}
-body main .card .img-container {
-  position: relative;
-}
-body main .card .img-container img {
-  width: 100%;
-  display: block;
-}
-body main .card .img-container .duration {
-  position: absolute;
-  background-color: #fb8c00;
-  padding: 20px;
-  color: white;
-  top: 20px;
-  left: 0;
-}
-body main .card .img-container .desc {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 40px 24px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-body main .card .card-footer {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-body main .card .common-padding, body main .card .amount, body main .card .currency {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-body main .card .currency {
-  color: #087d36;
-}
-body main .card .amount {
-  color: #fb8c00;
-}
 body .mid-info-slider {
   background-color: #087d36;
 }
@@ -232,6 +233,30 @@ body .mid-info-slider h3 {
 }
 body .mid-info-slider i {
   color: #feeb1b;
+}
+body .mid-info-slider .owl-nav {
+  top: 37px;
+  right: 30px;
+  position: absolute;
+  font-size: 40px;
+}
+body .mid-info-slider .owl-nav .owl-prev,
+body .mid-info-slider .owl-nav .owl-next {
+  margin: 10px;
+}
+body .image-slider .card {
+  margin: 15px;
+}
+body .image-slider .owl-nav {
+  color: black;
+  top: -60px;
+  right: 30px;
+  position: absolute;
+  font-size: 40px;
+}
+body .image-slider .owl-nav .owl-prev,
+body .image-slider .owl-nav .owl-next {
+  margin: 10px;
 }
 body footer {
   background-color: #087d36;

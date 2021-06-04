@@ -2,6 +2,7 @@
 @import 'utility';
 @import url('../font/flaticon.css');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,600;0,900;1,700&display=swap');
+@import 'common';
 
 * {
     margin: 0;
@@ -114,14 +115,14 @@ body {
             font-weight: normal;
         }
 
-        input{
+        input {
             padding: 11px;
             width: 600px;
             color: $grey-dark;
         }
 
-        button{
-           padding: 12px;
+        button {
+            padding: 12px;
             background-color: $orange;
             border: none;
             color: white;
@@ -131,83 +132,63 @@ body {
     main {
 
         background-color: $grey;
-        h1{
-           color: $green-darker;
-           text-transform: uppercase;
-           font-size: 30px;
+
+        h1 {
+            color: $green-darker;
+            text-transform: uppercase;
+            font-size: 30px;
         }
 
         .card {
-            box-shadow: $box-shadow;
-
-            .img-container {
-                position: relative;
-
-                img {
-                    width: 100%;
-                    display: block;
-                }
-
-                .duration {
-                    position: absolute;
-                    background-color: $orange;
-                    padding: 20px;
-                    color: $white;
-                    top: 20px;
-                    left: 0;
-                }
-
-                .desc {
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0;
-                    height: 120px;
-                    background-color: rgba(0, 0, 0, 0.3);
-                    color: $white;
-                    padding: 40px 24px;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                }
-
-                .plus {
-                    @extend .button-round;
-                }
-            }
-
-            .card-footer {
-                padding-top: 10px;
-                padding-bottom: 30px;
-            }
-
-            .common-padding {
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-
-            .currency {
-                color: $green-dark;
-                @extend .common-padding;
-            }
-
-            .amount {
-                color: $orange;
-                @extend .common-padding;
-            }
+            @extend .common-card;
         }
     }
 
-    .mid-info-slider{
-             background-color: $green-dark;
-            
-        h3{
-           font-size: 34px; 
-           font-style: italic;
-           font-weight: 200px;
-        } 
-        
-       i{
-           color: $yellow;
-       } 
+    .mid-info-slider {
+        background-color: $green-dark;
+
+        h3 {
+            font-size: 34px;
+            font-style: italic;
+            font-weight: 200px;
+        }
+
+        i {
+            color: $yellow;
+        }
+
+        .owl-nav {
+            top: 37px;
+            right: 30px;
+            position: absolute;
+            font-size: 40px;
+
+            .owl-prev,
+            .owl-next {
+                margin: 10px;
+            }
+        }
+
+    }
+
+    .image-slider {
+        .card {
+            @extend .common-card;
+            margin: 15px;
+        }
+
+        .owl-nav {
+            color: black;
+            top: -60px;
+            right: 30px;
+            position: absolute;
+            font-size: 40px;
+
+            .owl-prev,
+            .owl-next {
+                margin: 10px;
+            }
+        }
 
     }
 
