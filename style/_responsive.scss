@@ -1,0 +1,70 @@
+@media only screen and (max-width : 1224px) {
+    .d-grid {
+        display: block;
+    }
+
+    body {
+        .container {
+            width: 90% !important;
+        }
+        h1,h2,h3,h4,h5{
+            text-align: center !important;
+        }
+        header {
+            border-bottom: 1px solid $green-darkest;
+
+            a {
+                font-size: 14px !important;
+            }
+
+            .email {
+                text-align: center;
+            }
+
+            ul {
+                li {
+                    display: block !important;
+                }
+            }
+
+            .burger-menu {
+                display: inline-block !important;
+                width: 30px;
+            }
+
+            .submenu {
+                z-index: 3;
+                left: -5vw;
+                width: 90vw !important;
+            }
+
+            .menu {
+                display: none;
+            }
+
+        }
+
+        .banner {
+            background-size: cover !important;
+            padding: 50px 0 !important;
+
+            input {
+                width: 80% !important;
+            }
+        }
+
+        .card{
+            margin-top: 30px !important;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        footer{
+            .col{
+                margin-top: 30px !important;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@
     &.col-2 {
         grid-template-columns: auto auto;
     }
+
     &.col-3 {
         grid-template-columns: auto auto auto;
     }
@@ -11,16 +12,20 @@
     &.col-4 {
         grid-template-columns: auto auto auto auto;
     }
+
     &.ai-center {
         align-items: center;
     }
-    &.col-gap-30{
+
+    &.col-gap-30 {
         column-gap: 30px;
     }
-    &.row-gap-30{
+
+    &.row-gap-30 {
         row-gap: 30px;
     }
-}   
+}
+
 
 .container {
     width: 80%;
@@ -35,9 +40,10 @@
     text-align: center;
 }
 
-.text-white{
+.text-white {
     color: $white;
 }
+
 // PADDING CLASSES
 
 @mixin py($val) {
@@ -53,15 +59,15 @@
     @include py(10px);
 }
 
-.pt-30{
+.pt-30 {
     padding-top: 30px;
 }
 
-.mb-40{
+.mb-40 {
     margin-bottom: 40px;
 }
 
-.button-round{
+.button-round {
     font-size: 1.6rem;
     position: absolute;
     bottom: -20px;

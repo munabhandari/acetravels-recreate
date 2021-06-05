@@ -33,17 +33,23 @@ $(document).ready(function () {
         nav: true,
         autoplay: true
     });
-});
 
-
-// image-slider done using owlCarousel 
-$(document).ready(function () {
+    // image-slider done using owlCarousel 
     $(".image-slider").owlCarousel({
-        items: 3,
+        items: (screen.width < 1224 ? 1 : 3),
         loop: true,
         autoplaySpeed: 500,
         autoplayTimeout: 3000,
         nav: true,
         autoplay: true
     });
+
+    $(".burger-menu").click(function(){
+        $('.menu').toggle();
+    })
+    
+    $(".has-submenu").click(function(){
+        $(this).find('.submenu').toggle();
+    })
+
 });

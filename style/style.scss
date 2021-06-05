@@ -3,6 +3,7 @@
 @import url('../font/flaticon.css');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,600;0,900;1,700&display=swap');
 @import 'common';
+@import 'responsive';
 
 * {
     margin: 0;
@@ -43,6 +44,10 @@ body {
 
         .logo {
             width: 265px;
+
+            img {
+                width: 100%;
+            }
         }
 
         i {
@@ -50,6 +55,9 @@ body {
         }
 
 
+        .burger-menu {
+            display: none;
+        }
 
         nav {
             background-color: $green-darker;
@@ -117,7 +125,7 @@ body {
 
         input {
             padding: 11px;
-            width: 600px;
+            width: 60%;
             color: $grey-dark;
         }
 

@@ -102,6 +102,7 @@
   padding: 40px 24px;
   font-size: 18px;
   text-transform: uppercase;
+  width: 100%;
 }
 .common-card .card-footer, body .image-slider .card .card-footer, body main .card .card-footer {
   padding-top: 10px;
@@ -118,6 +119,58 @@
   color: #fb8c00;
 }
 
+@media only screen and (max-width: 1224px) {
+  .d-grid {
+    display: block;
+  }
+
+  body .container {
+    width: 90% !important;
+  }
+  body h1, body h2, body h3, body h4, body h5 {
+    text-align: center !important;
+  }
+  body header {
+    border-bottom: 1px solid #006222;
+  }
+  body header a {
+    font-size: 14px !important;
+  }
+  body header .email {
+    text-align: center;
+  }
+  body header ul li {
+    display: block !important;
+  }
+  body header .burger-menu {
+    display: inline-block !important;
+    width: 30px;
+  }
+  body header .submenu {
+    z-index: 3;
+    left: -5vw;
+    width: 90vw !important;
+  }
+  body header .menu {
+    display: none;
+  }
+  body .banner {
+    background-size: cover !important;
+    padding: 50px 0 !important;
+  }
+  body .banner input {
+    width: 80% !important;
+  }
+  body .card {
+    margin-top: 30px !important;
+  }
+  body img {
+    max-width: 100%;
+  }
+  body footer .col {
+    margin-top: 30px !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -152,8 +205,14 @@ body header a {
 body header .logo {
   width: 265px;
 }
+body header .logo img {
+  width: 100%;
+}
 body header i {
   vertical-align: sub;
+}
+body header .burger-menu {
+  display: none;
 }
 body header nav {
   background-color: #006d26;
@@ -206,7 +265,7 @@ body .banner h2 {
 }
 body .banner input {
   padding: 11px;
-  width: 600px;
+  width: 60%;
   color: #c9c9c9;
 }
 body .banner button {
